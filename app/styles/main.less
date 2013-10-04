@@ -1,0 +1,80 @@
+// Useful Twitter Bootstrap Mixins
+@import "../vendor/bootstrap/less/mixins";
+
+// Height of the map
+@mapHeight: 300px;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+#map-canvas {
+	height: 100%;
+}
+
+.fixed-map {
+	height: @mapHeight;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+.container {
+	margin-top: @mapHeight + 50px;
+}
+
+#share-location,
+#msg-error,
+#loading {
+	display: none;
+	.transition(display 1s);
+}
+
+// Places List
+#places {
+	.row {
+		margin-bottom: 25px;
+	}
+
+	// On Place hover add shadow effect on photo
+	.place-item:hover {
+		img {
+			.box-shadow(10px 10px 5px #888888);
+		}
+	}
+
+	// Place Image
+	.thumbnail > img {
+		.size(300px, 200px);
+		.transition(box-shadow 1s);
+	}
+}
+
+#modal {
+	.icon {
+		.size(20px, 20px);
+	}
+}
+
+.morePlaces {
+	margin-top: 140px;
+}
+
+.link {
+	cursor: pointer;
+}
+
+// Do not use top fixed map if screen height is small
+@media screen and (max-height: 640px) {
+	.fixed-map {
+		position: relative;
+	}
+	.container {
+		margin-top: 0;
+	}
+}

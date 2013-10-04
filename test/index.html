@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test - Fast Local Food</title>
+	<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.12.0.css"/>
+</head>
+<body>
+	<section id="places"></section>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<script type="text/javascript" src="../app/vendor/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../app/vendor/jquery-ui/ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="../app/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
+
+	<script type="text/javascript" src="../app/scripts/view.js"></script>
+	<script type="text/javascript" src="../app/scripts/map.js"></script>
+	<script type="text/javascript" src="../app/scripts/position.js"></script>
+	<script type="text/javascript" src="../app/scripts/places.js"></script>
+	<script type="text/javascript" src="../app/scripts/app.js"></script>
+
+	<script src="vendor/jquery.mockjax.js"></script>
+	<script src="http://code.jquery.com/qunit/qunit-1.12.0.js"></script>
+	<script src="test.js"></script>
+</body>
+</html>

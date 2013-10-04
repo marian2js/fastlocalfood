@@ -1,0 +1,12 @@
+{
+  "name": "fastlocalfood",
+  "version": "0.0.2",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+	"font-awesome": "3.2.1",
+    "jquery": "latest",
+    "jquery-ui": "latest",
+	"less.js": "1.4.2"
+  },
+  "devDependencies": {}
+}
