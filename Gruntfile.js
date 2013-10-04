@@ -1,12 +1,6 @@
 // Generated on 2013-09-14 using generator-webapp 0.4.2
 'use strict';
 
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
-
 module.exports = function (grunt) {
 	// show elapsed time at the end
 	require('time-grunt')(grunt);
@@ -183,12 +177,7 @@ module.exports = function (grunt) {
 		},
 		preprocess: {
 			prod: {
-				/*html : {
-					src : '<%= yeoman.app %>/*.html',
-					dest : '<%= yeoman.dist %>/*.html'
-				},*/
 				src: ['<%= yeoman.dist %>/*.html'],
-				//dest: ['<%= yeoman.dist %>/*.html'],
 				options: {
 					src : '<%= yeoman.app %>/*.html',
 					dest : '<%= yeoman.dist %>/*.html',
@@ -199,7 +188,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		// Put files not handled in other tasks here
 		copy: {
 			dist: {
 				files: [{
